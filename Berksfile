@@ -10,6 +10,10 @@ cookbook 'database'
 cookbook 'lvm'
 cookbook 'php-fpm'
 cookbook 'postgresql'
+cookbook 'mysql'
+cookbook 'yum-mysql-community'
+cookbook 'mysql2_chef_gem'
+cookbook 'windows_firewall'
 
 group :integration do
   cookbook 'locale'
