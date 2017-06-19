@@ -23,4 +23,3 @@
 # SOFTWARE.
 
 include_recipe 'zabbix_lwrp::repository' if node['platform_family'] != 'windows'
-include_recipe 'zabbix_lwrp::agent'
