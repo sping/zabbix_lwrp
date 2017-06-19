@@ -47,7 +47,7 @@ db_user_data = data_bag_item(sql_attr['databag'], 'users')['users']
 db_user = db_user_data.keys.first
 db_pass = db_user_data[db_user]['options']['password']
 
-chef_nginx_site node['zabbix']['server']['web']['server_name'] do
+nginx_site node['zabbix']['server']['web']['server_name'] do
   action :enable
   template 'zabbix-site.conf.erb'
   variables(

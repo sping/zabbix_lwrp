@@ -38,7 +38,7 @@ if node['platform_family'] == 'rhel'
 end
 
 mysql2_chef_gem 'default' do
-  package_version mysql_attr['version']
+  #version mysql_attr['version']
   action :install
 end
 
